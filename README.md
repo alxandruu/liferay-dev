@@ -1,4 +1,3 @@
-# liferay-dev
 Collection of Liferay 7 modules and themes. Essential modules. All modules are done in 7.4
 
 <h3>Modules Folder =></h3>
@@ -13,10 +12,3 @@ Collection of Liferay 7 modules and themes. Essential modules. All modules are d
   <li><strong>ultra-cron-example    =></strong> Extension of basic-cron-example. Contains the configuration inside System Configuration Panel, you can enable the cron and change the text that shows in the console.</li>
   <li><strong>user-post-update-model-listener =></strong> ModelListener event. Sends an email when your account settings has been changed.</li>
 </ul>
-
-<h3>Themes Folder =></h3>
-  <ul>
-    <li></li>
-  </ul>
-  
-  
