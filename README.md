@@ -1,5 +1,5 @@
 # liferay-dev
-Collection of Liferay 7 modules and themes. Essential modules that you must know if you develop with Liferay. All modules are done in 7.4
+Collection of Liferay 7 modules and themes. Essential modules. All modules are done in 7.4
 
 <h3>Modules Folder =></h3>
 
