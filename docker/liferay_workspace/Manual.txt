@@ -1,0 +1,19 @@
+Folders -> 
+  All files inside the next folders are going to be executed only once, to create the images. When the images are created the data inside this folders are not required.
+  
+  - liferay: All files inside this folder are going to be deployed and override into the liferay container.
+  - sql: Folder containing all the .sql files to be executed in the mysql container. To verify that all files have been executed correctly, the SQL container must finish accepting connections.
+
+
+Instructions ->
+  Database root password is "root".
+
+  1. Change ${liferay_version} of Dockerfile.lfr to the liferay version of the project. You can check the available versions in Docker Hub.
+      Ex: liferay/dxp:7.3.10-dxp-1-d2.0.15-20220207214414
+
+  2. Change ${mysql_volume_name} to the name of the volume where all database data will be stored.
+
+  3. Change ${liferay_volume_name} to the name of the volume where all liferay tomcat data will be stored. 
+
+  4. Change ${deploy_folder_project} to the path to the computer folder where the portlets will be deployed in the container.
+      Ex: Absolute Path = //c/project_x/deploy
