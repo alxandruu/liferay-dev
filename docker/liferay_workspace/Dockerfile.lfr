@@ -1,0 +1,7 @@
+FROM ${liferay_version}
+
+COPY ./liferay /opt/liferay
+
+USER root
+
+EXPOSE 8080
