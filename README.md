@@ -1,7 +1,12 @@
 Collection of Liferay 7 modules and themes. Essential modules. All modules are done in 7.4
 
-<h3>Modules Folder =></h3>
+<h3>Docker Folder =></h3>
+<ul>
+  <li><strong>ftp_server =></strong> Creates a ftp_server in docker</li>
+  <li><strong>liferay_workspace =></strong> Structure and manual to create fastly a Liferay Workspace in Docker. </li>
+</ul>
 
+<h3>Modules Folder =></h3>
 <ul>
   <li><strong>InsidePanelMVCPortlet =></strong> MVC-Portlet embedded inside the Admin Panel. Contains the essential files to perform it.</li>
   <li><strong>basic-cron-example  =></strong> Basic cron in which every minute shows a Log, done through MessageListener.</li>
@@ -11,4 +16,9 @@ Collection of Liferay 7 modules and themes. Essential modules. All modules are d
   <li><strong>post-login-event-listener =></strong> LifecycleAction. Sends an email when a user has logged in.</li>
   <li><strong>ultra-cron-example    =></strong> Extension of basic-cron-example. Contains the configuration inside System Configuration Panel, you can enable the cron and change the text that shows in the console.</li>
   <li><strong>user-post-update-model-listener =></strong> ModelListener event. Sends an email when your account settings has been changed.</li>
+</ul>
+
+<h3>Themes Folder =></h3>
+<ul>
+  <li><strong>standard-layout-template =></strong> Personalized layout for Liferay pages.</li>
 </ul>
