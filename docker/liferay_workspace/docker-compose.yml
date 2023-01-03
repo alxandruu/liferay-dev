@@ -10,19 +10,20 @@ services:
       - MYSQL_ROOT_PASSWORD=root
     volumes:
       - ${mysql_volume_name}:/var/lib/mysql
-    healthcheck:
-      test: ["CMD", "mysqladmin" ,"ping", "-h", "localhost"]
-      timeout: 20s
-      retries: 10
   liferay:
     build:
       context: .
       dockerfile: Dockerfile.lfr
     ports:
       - "8080:8080"
-    depends_on:
+      - "8000:8000"
+    environment:
+      - LIFERAY_JDPA_ENABLED=true
+      - JDPA_ADDRESS=8000
+      - JDPA_TRANSPORT=dt_socket
+    depends_on: # This can removed after SQL is fully loaded
       database:
-        condition: service_healthy
+        condition: service_completed_successfully
     volumes:
       - ${deploy_folder_project}:/opt/liferay/deploy
       - ${liferay_volume_name}:/opt/liferay

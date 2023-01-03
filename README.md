@@ -3,7 +3,7 @@ Collection of Liferay 7 modules and themes. Essential modules. All modules are d
 <h3>Docker Folder =></h3>
 <ul>
   <li><strong>ftp_server =></strong> Creates a ftp_server in docker</li>
-  <li><strong>liferay_workspace =></strong> Structure and manual to create fastly a Liferay Workspace in Docker. </li>
+  <li><strong>liferay_workspace =></strong> Structure and manual to create fastly a Liferay Workspace using Docker and IntelliJ IDEA</li>
 </ul>
 
 <h3>Modules Folder =></h3>
